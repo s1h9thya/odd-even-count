@@ -1,0 +1,20 @@
+#include<stdio.h>  
+int main()
+{
+	int n;  // 12345
+	int r,ecount=0,ocount=0;	
+	scanf("%d",&n);
+	while(n>0)   // 1 >0
+	{
+		r=n%10;    // r=1
+		if(r%2==0)
+			ecount=ecount+1;   //ecount=2
+		else
+		   ocount=ocount+1;   // ocount= 3
+		n=n/10;    //1
+	}
+	printf("Even Count%d\n",ecount);
+	printf("Odd Count%d\n",ocount);
+	
+	return 0;
+}
